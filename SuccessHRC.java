@@ -40,7 +40,7 @@ dr.findElement(By.xpath("//a[@class='btn btn-social btn-github']")).click();
 for(int i=5;i<=10;i++)
 {
 Thread.sleep(1000);
- dr.findElement(By.xpath("//*[@class='list-group']/li["+(i)+"]/div/div[2]/button")).click();
+ dr.findElement(By.xpath("//*[@class='list-group']/li["+(i--)+"]/div/div[2]/button")).click();
 }
 Thread.sleep(1000);
 //dr.findElement(By.xpath("//a[@<button class="btn btn-default"]/ng-click="todo.signOut()">Sign out</button>));
